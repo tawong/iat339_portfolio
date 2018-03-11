@@ -1,0 +1,78 @@
+@font-face {
+    font-family: Gilroy;
+    src: url(../fonts/Gilroy-Light.otf);
+}
+
+@font-face {
+    font-family: Gilroy-Bold;
+    src: url(../fonts/Gilroy-ExtraBold.otf);
+}
+
+h1,
+h2,
+h3 {
+    font-family: Gilroy-Bold;
+}
+
+.section-header{
+    margin-bottom: 15px;
+}
+
+.section-header h1{
+    font-size: 5rem;
+    margin-bottom: 0px;
+}
+
+hr{
+    margin-top: 4px;
+}
+
+h1.brand-style {
+    padding-left: 15px;
+    color: #000;
+    border-left: 8px solid #f05a28;
+    letter-spacing: 0.01em;
+}
+
+h2.brand-style,
+h3.brand-style {
+    position: relative;
+    color: #000;
+}
+
+h2.brand-style:before,
+h3.brand-style:before {
+    /* position the element */
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    /* get the same width as the heading */
+    content: attr(data-content);
+    /* solid white rectangle */
+    background-color: #FFF;
+    color: #FFF;
+    /* make middle layer */
+    z-index: -1;
+    /* allow some space between the heading and the line */
+    padding-right: 0.5em;
+}
+
+h2.brand-style:after,
+h3.brand-style:after {
+    /* position the element */
+    position: absolute;
+    content: '';
+    display: block;
+    left: 0;
+    right: 0;
+    top: 49%;
+    /* draw the line */
+    background-color: #f05a28;
+    height: .15em;
+    /* ensure the line is visible in case .1em < 1px */
+    min-height: 1px;
+    /* make bottom layer */
+    z-index: -2;
+}
