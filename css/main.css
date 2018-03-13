@@ -14,6 +14,10 @@ h3 {
     font-family: Gilroy-Bold;
 }
 
+section .container{
+    margin-bottom: 20px;
+}
+
 .section-header{
     margin-bottom: 15px;
 }
@@ -21,27 +25,26 @@ h3 {
 .section-header h1{
     font-size: 5rem;
     margin-bottom: 0px;
+    text-align: center;
 }
 
 hr{
     margin-top: 4px;
 }
 
-h1.brand-style {
+h2.brand-style, h3.brand-style  {
     padding-left: 15px;
     color: #000;
     border-left: 8px solid #f05a28;
     letter-spacing: 0.01em;
 }
 
-h2.brand-style,
-h3.brand-style {
+h1.brand-style {
     position: relative;
     color: #000;
 }
 
-h2.brand-style:before,
-h3.brand-style:before {
+h1.brand-style:before{
     /* position the element */
     position: absolute;
     display: block;
@@ -59,8 +62,7 @@ h3.brand-style:before {
     padding-right: 0.5em;
 }
 
-h2.brand-style:after,
-h3.brand-style:after {
+h1.brand-style:after {
     /* position the element */
     position: absolute;
     content: '';
@@ -75,4 +77,63 @@ h3.brand-style:after {
     min-height: 1px;
     /* make bottom layer */
     z-index: -2;
+}
+
+code{
+    margin-bottom: 5px;
+}
+
+/*PROJECT CARD*/
+
+.project-card{
+    background: #f7f8fa;
+    box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img{
+    width: 100%;
+}
+
+.project-sidebar{
+    position: absolute;
+    width: 180px;
+    height: 100%;
+    top: 0;
+    left: 102%;
+}
+
+.project-sidebar span{
+    display: block;
+    background-color: #f7f8fa;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+    padding: 4px;
+}
+
+.swatch {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    width: 150px;
+    height: 100px;
+    text-align: center;
+}
+
+.swatch.black{
+    background: #000000;
+    color: white;
+}
+
+.swatch.grey{
+    background: #f7f8fa;
+    color: black;
+}
+
+.swatch.orange{
+    background: #f05a28;
+    color: black;
+}
+
+#sg-citations a{
+    display: block;
 }
