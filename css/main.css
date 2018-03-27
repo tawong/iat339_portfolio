@@ -206,6 +206,14 @@ code{
     text-align: center;
 }
 
+#footer{
+    margin-bottom: 12px;
+}
+
+#footer hr{
+    margin-bottom: 1em;
+}
+
 /* PORTFOLIO */
 
 .portfolio-img{
