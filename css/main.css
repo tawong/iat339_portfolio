@@ -18,7 +18,7 @@ html, body{
 h1,
 h2,
 h3 {
-    font-family: Gilroy-Bold;
+    font-family: Gilroy-Bold, "Segoe UI Bold", "Arial Black", sans-serif;
 }
 
 a{
@@ -176,11 +176,12 @@ code{
     border: 3px solid #f05a28; /* Green */
     background-color: white; 
     color: #f05a28;
-    padding: 15px 32px;
+    padding: 6px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    font-weight: 600;
     transition: 0.4s;
     cursor: pointer;
 }
@@ -196,6 +197,13 @@ code{
 
 #sg-citations p{
     word-break: break-all;
+}
+
+.gridpiece{
+    border: 2px solid white;
+    background: lightgray;
+    border-radius: 10px;
+    text-align: center;
 }
 
 /* PORTFOLIO */
