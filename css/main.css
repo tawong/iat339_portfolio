@@ -129,15 +129,7 @@ code{
     width: 100%;
 }
 
-.project-sidebar{
-/*
-    position: absolute;
-    width: 180px;
-    height: 100%;
-    top: 0;
-    left: 102%;
-*/
-}
+
 
 .project-sidebar span{
     display: block;
